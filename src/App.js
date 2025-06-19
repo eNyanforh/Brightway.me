@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Analytics } from "@vercel/analytics/react"
 
 const Container = styled.div`
   font-family: 'Inter', sans-serif;
@@ -104,7 +105,7 @@ const HeroText = styled.div`
   min-width: 300px;
   padding-right: 2rem;
   font-size:1.2rem;
-  font-weight:400;
+  ;
 `;
 
 const HeroHeading = styled.h1`
@@ -122,7 +123,7 @@ const HeroSubtext = styled.p`
   margin-bottom: 3rem;
   font-size: 1.25rem;
   color: black;
-  font-weight:400;
+  font-weight:bold;
 
 `;
 
@@ -132,6 +133,7 @@ height:230px;
 background-color:#000;
 border-radius:20px;
 margin-left:10px;
+margin-bottom:20px;
 `
 
 const FeatureList = styled.div`
