@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Analytics } from "@vercel/analytics/react"
+
 
 const Container = styled.div`
   font-family: 'Inter', sans-serif;
