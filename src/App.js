@@ -10,16 +10,23 @@ const Container = styled.div`
 
 
 const TopNav = styled.section`
+font-size:1.2rem;
 background-color:black;
 width:100%;
 height:5vh;
-color:white;
+
 display:flex;
 align-items:center;
 padding: 1rem 2rem;
  
 div{
 margin-right:20px;
+color:white;
+font-weight:600;
+}
+
+div span{
+color: #3B82F6;
 }
 
 `;
@@ -87,9 +94,10 @@ const Hero = styled.section`
   align-items: center;
   background: #E7F0FB;
   height:85vh;
-  background-image: url("/brightway2.png");
-  background-size: cover;
-  background-position: center;
+  // background-image: url("/brightway2.png");
+  // background-size:contain;
+  // background-repeat: no-repeat;
+  // background-position: bottom right;
 `;
 
 
@@ -97,6 +105,8 @@ const HeroText = styled.div`
   flex: 1;
   min-width: 300px;
   padding-right: 2rem;
+  font-size:1.2rem;
+  font-weight:400;
 `;
 
 const HeroHeading = styled.h1`
@@ -162,7 +172,7 @@ export default function BrightwayLanding() {
   return (
     <Container>
       <TopNav>
-        <div>Individuals</div>
+        <div><span>Individuals</span></div>
         <div> Schools </div>
       </TopNav>
       <Navbar>
