@@ -95,7 +95,10 @@ const Hero = styled.section`
   flex-wrap: wrap;
   padding-left:2rem;
   align-items: center;
-  background: #E7F0FB;
+  background:url("/bg4.jpg");
+  background-position:center;
+  background-size:cover;
+  // background: #E7F0FB;
   height:85vh;
 `;
 
