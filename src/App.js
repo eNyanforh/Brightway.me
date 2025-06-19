@@ -6,21 +6,23 @@ const Container = styled.div`
   width:100%;
   height:100vh;
   font-family:inter;
+  overflow:hidden;
 `;
 
 
 const TopNav = styled.section`
+display:flex;
 font-size:1.2rem;
 background-color:black;
 width:100%;
 height:5vh;
-
 display:flex;
 align-items:center;
 padding: 1rem 2rem;
+gap:2rem;
  
 div{
-margin-right:20px;
+// margin-right:20px;
 color:white;
 font-weight:600;
 }
@@ -90,14 +92,10 @@ const Button = styled.button`
 const Hero = styled.section`
   display: flex;
   flex-wrap: wrap;
-  padding: 3rem 2rem;
+  padding-left:2rem;
   align-items: center;
   background: #E7F0FB;
   height:85vh;
-  // background-image: url("/brightway2.png");
-  // background-size:contain;
-  // background-repeat: no-repeat;
-  // background-position: bottom right;
 `;
 
 
@@ -121,22 +119,59 @@ const HeroHeading = styled.h1`
 `;
 
 const HeroSubtext = styled.p`
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #4b5563;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  color: black;
+  font-weight:400;
+
 `;
 
-const FeatureList = styled.ul`
+const FeatureListContainer = styled.div`
+width:440px;
+height:230px;
+background-color:#000;
+border-radius:20px;
+margin-left:10px;
+`
+
+const FeatureList = styled.div`
+display:flex;
+justify-content:center;
+flex-direction:column;
+position:relative;
+top:-10px;
+left:-10px;
   margin: 1rem 0;
+  width:435px;
+  height:225px;
   padding-left: 1rem;
   list-style: disc;
+  background-color:white;
+  border-radius:20px;
+  border:4px solid black;
+  
+
+  li{
+    padding:10px;
+    font-weight:bold;
+  }
 `;
 
 const HeroImage = styled.div`
   flex: 1;
   min-width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
+  // background-color:red;
+  height:100%;
+   background-image: url("/brightway2.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position:relative;
+  top:20px;
+  left:100px;
+  
 `;
 
 // const Section = styled.section`
@@ -196,16 +231,18 @@ export default function BrightwayLanding() {
             Brightway is an AI-driven digital ecosystem built to empower students,
             connect schools, and deliver opportunities through intelligent tools.
           </HeroSubtext>
+        <FeatureListContainer >
           <FeatureList>
             <li>Create your future</li>
             <li>Build skills</li>
             <li>Connect & Grow</li>
             <li>Opportunity at your fingertips</li>
           </FeatureList>
+        </FeatureListContainer>
           
         </HeroText>
         <HeroImage>
-          <img src="./brightway2.png" alt="Hero Illustration" width="300" />
+          {/* <img src="./brightway2.png" alt="Hero Illustration" width="300" /> */}
         </HeroImage>
       </Hero>
 
