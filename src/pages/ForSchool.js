@@ -118,6 +118,7 @@ const HeroHeading = styled.h1`
   font-weight: 800;
   margin-bottom: 1rem;
   color: #111827;
+  margin-top:-80px;
 
   span{
   color:#3B82F6
@@ -134,11 +135,11 @@ const HeroSubtext = styled.p`
 
 const FeatureListContainer = styled.div`
 width:440px;
-height:200px;
+height:180px;
 background-color:#000;
 border-radius:20px;
 margin-left:10px;
-margin-bottom:100px;
+margin-bottom:40px;
 `
 
 const FeatureList = styled.div`
@@ -150,7 +151,7 @@ top:-10px;
 left:-10px;
   margin: 1rem 0;
   width:435px;
-  height:200px;
+  height:180px;
   padding-left: 1rem;
   list-style: disc;
   background-color:white;
@@ -212,6 +213,17 @@ const HeroImage = styled.div`
 //   width: 260px;
 // `;
 
+
+const PartnersCta = styled(Link)`
+padding: 1rem 10.2rem;
+background-color:#3B82F6;
+border-radius:20px;
+margin-bottom:20px;
+color:white;
+text-decoration:none;
+font-weight:600;
+`
+
 export default function ForSchool() {
   return (
     <Container>
@@ -266,6 +278,10 @@ export default function ForSchool() {
             <li>Talent showcase for students</li>
           </FeatureList>
         </FeatureListContainer>
+
+        <PartnersCta>
+            Partner with us
+        </PartnersCta>
           
         </HeroText>
         <HeroImage>
