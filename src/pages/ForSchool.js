@@ -222,6 +222,7 @@ margin-bottom:20px;
 color:white;
 text-decoration:none;
 font-weight:600;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 `
 
 export default function ForSchool() {
