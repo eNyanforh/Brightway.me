@@ -9,7 +9,7 @@ const Hero = styled.section`
   flex-wrap: wrap;
   padding-left: 2rem;
   align-items: center;
-  background: url("/bg4.jpg");
+  background: url("/bg4.webp");
   background-position: center;
   background-size: cover;
   height: 85vh;
@@ -76,7 +76,7 @@ const HeroImage = styled.div`
   display: flex;
   justify-content: flex-end;
   height: 110%;
-  background-image: url("/schoolbg1.png");
+  background-image: url("/schoolbg1.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
