@@ -71,6 +71,12 @@ const NavLinks = styled.div`
   div {
     gap: 2rem;
   }
+
+  @media (max-width:1100px) {
+  div {
+  gap:1rem;
+  }
+  }
 `;
 
 const PrimaryNavLinks = styled.div`
