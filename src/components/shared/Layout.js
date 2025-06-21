@@ -7,12 +7,16 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
+
+  @media(max-width:1024px) {
+  
+  }
 `;
 
 const TopNav = styled.section`
   display: flex;
   font-size: 1.2rem;
-  background-color: black;
+  background-color:#000;
   width: 100%;
   height: 5vh;
   align-items: center;
@@ -55,25 +59,33 @@ const NavLinks = styled.div`
   flex: 4;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   font-size: 1.2rem;
+
+  @media (max-width:1100px){
+  flex:2.5
+  }
 
  
 
   div {
-    display: flex;
     gap: 2rem;
   }
 `;
 
 const PrimaryNavLinks = styled.div`
+display:flex;
 a{
 text-decoration:none;
 color:#000;
 }
 `
 const OnboardingLinks = styled.div`
+display:flex;
 
+@media(max-width:1024px) {
+
+}
 `
 
 const StyledLinkButton = styled(Link)`
