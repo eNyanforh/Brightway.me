@@ -15,7 +15,6 @@ const Hero = styled.section`
   @media (max-width:1100px) {
   height:90vh;
   align-items:flex-start;
-   align-items:center;
   justify-content:center;
   background:url("/brightway2.webp");
   background-color:#E7F0FB;
