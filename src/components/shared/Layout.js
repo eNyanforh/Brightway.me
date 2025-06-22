@@ -51,12 +51,20 @@ const Navbar = styled.nav`
   border-bottom: 1px solid #eaeaea;
   height: 10vh;
   font-weight: 600;
+
+  @media (max-width:1100px) {
+  padding:1rem 1rem;
+  }
 `;
 
 const Logo = styled.div`
   font-weight: 900;
   font-size: 1.875rem;
   flex: 1;
+
+  @media (max-width:1100px){
+  font-size:1.2rem;
+  }
 `;
 
 const NavLinks = styled.div`
