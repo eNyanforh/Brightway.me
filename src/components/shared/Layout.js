@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
+import { Sun } from "lucide-react";
 
 export const Container = styled.div`
   font-family: 'Inter', sans-serif;
@@ -54,6 +55,7 @@ const Navbar = styled.nav`
 
   @media (max-width:1100px) {
   padding:1rem 1rem;
+  height:5vh;
   }
 `;
 
