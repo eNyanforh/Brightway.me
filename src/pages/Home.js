@@ -19,10 +19,11 @@ const Hero = styled.section`
   justify-content:center;
   background:url("/brightway2.webp");
   background-color:#E7F0FB;
-  background-position: center;
-  background-size:contain;
+  background-size:600px 616px;
+   background-position:center 550%;
   background-repeat:no-repeat;
-  background-postion:bottom;
+  bottom:100px;
+ 
   }
 `;
 
