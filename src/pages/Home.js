@@ -84,6 +84,10 @@ const HeroImage = styled.div`
   position: relative;
   top: 20px;
   left: 100px;
+
+  @media (max-width:1100px) {
+  display:none;
+  }
 `;
 
 export default function Home() {
