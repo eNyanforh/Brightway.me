@@ -35,6 +35,7 @@ const HeroText = styled.div`
 
   @media (max-width:1100px) {
   text-algin:center;
+  margin-top:2rem;
   }
 
 `;
@@ -51,6 +52,7 @@ const HeroHeading = styled.h1`
 
   @media(max-width:1100px) {
   font-size:1.875rem
+  
   }
 `;
 
@@ -63,6 +65,7 @@ const HeroSubtext = styled.p`
    @media (max-width:1100px) {
   font-size:0.9rem;
   font-weight:normal;
+  margin-bottom:1rem;
   }
 `;
 
@@ -76,6 +79,7 @@ const FeatureListContainer = styled.div`
 
   @media (max-width:1100px) {
   display:none;
+  margin-bottom:0;
 
   }
 `;
@@ -120,14 +124,7 @@ const HeroImage = styled.div`
   }
 `;
 
-// const MobileHeroImg = styled.div`
-// background-color:red;
 
-// img{
-// width:360px;
-// }
-
-// `
 
 export default function Home() {
   return (
@@ -154,9 +151,7 @@ export default function Home() {
           <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
           </OnboardingLinks>
           </HeroText>
-          {/* <MobileHeroImg>
-            <img src="/brightway2.webp" alt="Childern Graduating"/>
-          </MobileHeroImg> */}
+          
           <HeroImage />
         </Hero>
       </Layout>
