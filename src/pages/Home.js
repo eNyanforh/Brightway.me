@@ -22,6 +22,7 @@ const Hero = styled.section`
    background-position:center 300%;
   background-repeat:no-repeat;
   bottom:100px;
+  overflow:hidden;
  
   }
 `;
