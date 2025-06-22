@@ -11,7 +11,7 @@ export const Container = styled.div`
   overflow: hidden;
 
   @media (max-width:1100px) {
-  overflow:scroll;
+  
   }
 `;
 
