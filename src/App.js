@@ -8,6 +8,7 @@ import ForSchool from "./pages/ForSchool";
 import Join from "./pages/Join";
 import Login from "./pages/Login";
 
+
 function App() {
   return (
     <Router>

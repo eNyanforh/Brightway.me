@@ -7,10 +7,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
-  @media(max-width:1024px) {
-  
-  }
 `;
 
 const TopNav = styled.section`
@@ -62,20 +58,8 @@ const NavLinks = styled.div`
   justify-content:space-between;
   font-size: 1.2rem;
 
-  @media (max-width:1100px){
-  flex:2.5
-  }
-
- 
-
   div {
     gap: 2rem;
-  }
-
-  @media (max-width:1100px) {
-  div {
-  gap:1rem;
-  }
   }
 `;
 
@@ -89,9 +73,7 @@ color:#000;
 const OnboardingLinks = styled.div`
 display:flex;
 
-@media(max-width:1024px) {
 
-}
 `
 
 const StyledLinkButton = styled(Link)`
@@ -106,6 +88,10 @@ const StyledLinkButton = styled(Link)`
   display: inline-block;
   text-align: center;
 `;
+
+const Icon = styled.div`
+display:none;
+`
 
 export function Layout({ children, activeTab = "individuals" }) {
   return (
@@ -129,6 +115,9 @@ export function Layout({ children, activeTab = "individuals" }) {
           <StyledLinkButton to="/login">Login</StyledLinkButton>
           <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
           </OnboardingLinks>
+          <Icon>
+            hidden
+          </Icon>
         </NavLinks>
       </Navbar>
       {children}
