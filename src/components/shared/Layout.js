@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
-import { Sun } from "lucide-react";
+
 
 export const Container = styled.div`
   font-family: 'Inter', sans-serif;
