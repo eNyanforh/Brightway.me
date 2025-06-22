@@ -51,7 +51,8 @@ const FeatureListContainer = styled.div`
   margin-bottom: 20px;
 
   @media (max-width:1100px) {
-  margin-bottom:0;
+  display:none;
+
   }
 `;
 
