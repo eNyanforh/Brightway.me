@@ -83,13 +83,17 @@ text-decoration:none;
 color:#000;
 }
 `
-const OnboardingLinks = styled.div`
+export const OnboardingLinks = styled.div`
+display:none;
+
+@media (max-width:1100px) {
 display:flex;
-
-
+flex-direction:column;
+gap:1rem;
+}
 `
 
-const StyledLinkButton = styled(Link)`
+export const StyledLinkButton = styled(Link)`
   padding: 0.5rem 2rem;
   border-radius: 20px;
   font-weight: 600;

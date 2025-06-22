@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Container } from "../components/shared/Layout";
+import { Layout, Container, StyledLinkButton, OnboardingLinks } from "../components/shared/Layout";
 import styled from "styled-components";
 
 const Hero = styled.section`
@@ -13,7 +13,8 @@ const Hero = styled.section`
   height: 85vh;
 
   @media (max-width:1100px) {
-  background:#E7F0FB
+  background:#E7F0FB;
+  
   }
 `;
 
@@ -22,6 +23,12 @@ const HeroText = styled.div`
   min-width: 300px;
   padding-right: 2rem;
   font-size: 1.2rem;
+  text-align:center;
+
+  @media (max-width:1100px) {
+  text-algin:center;
+  }
+
 `;
 
 const HeroHeading = styled.h1`
@@ -33,6 +40,10 @@ const HeroHeading = styled.h1`
   span {
     color: #3B82F6;
   }
+
+  @media(max-width:1100px) {
+  font-size:1.875rem
+  }
 `;
 
 const HeroSubtext = styled.p`
@@ -40,6 +51,11 @@ const HeroSubtext = styled.p`
   font-size: 1.25rem;
   color: black;
   font-weight: bold;
+
+   @media (max-width:1100px) {
+  font-size:0.9rem;
+  font-weight:normal;
+  }
 `;
 
 const FeatureListContainer = styled.div`
@@ -114,6 +130,11 @@ export default function Home() {
                 <li>Opportunity at your fingertips</li>
               </FeatureList>
             </FeatureListContainer>
+
+            <OnboardingLinks>
+          <StyledLinkButton to="/login">Login</StyledLinkButton>
+          <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
+          </OnboardingLinks>
           </HeroText>
           <HeroImage />
         </Hero>
