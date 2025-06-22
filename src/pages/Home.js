@@ -44,7 +44,11 @@ const FeatureListContainer = styled.div`
   background-color: #000;
   border-radius: 20px;
   margin-left: 10px;
- 
+  margin-bottom: 20px;
+
+  @media (max-width:1000px) {
+  margin-bottom:0;
+  }
 `;
 
 const FeatureList = styled.div`

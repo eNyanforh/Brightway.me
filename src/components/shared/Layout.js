@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
 
 export const Container = styled.div`
   font-family: 'Inter', sans-serif;
@@ -61,6 +62,10 @@ const NavLinks = styled.div`
   div {
     gap: 2rem;
   }
+
+  @media (max-width:1100px) {
+  display:none;
+  }
 `;
 
 const PrimaryNavLinks = styled.div`
@@ -91,6 +96,10 @@ const StyledLinkButton = styled(Link)`
 
 const Icon = styled.div`
 display:none;
+
+@media (max-width:1100px){
+display:flex;
+}
 `
 
 export function Layout({ children, activeTab = "individuals" }) {
@@ -115,10 +124,10 @@ export function Layout({ children, activeTab = "individuals" }) {
           <StyledLinkButton to="/login">Login</StyledLinkButton>
           <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
           </OnboardingLinks>
-          <Icon>
-            hidden
-          </Icon>
         </NavLinks>
+        <Icon>
+            <Menu size={30}/>
+          </Icon>
       </Navbar>
       {children}
     </>
