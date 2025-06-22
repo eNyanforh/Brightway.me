@@ -20,7 +20,7 @@ const TopNav = styled.section`
   font-size: 1.2rem;
   background-color:#000;
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   align-items: center;
   padding: 1rem 2rem;
   gap: 2rem;
@@ -55,7 +55,7 @@ const Navbar = styled.nav`
 
   @media (max-width:1100px) {
   padding:1rem 1rem;
-  height:5vh;
+  height:8vh;
   }
 `;
 
