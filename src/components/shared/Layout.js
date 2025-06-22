@@ -20,7 +20,7 @@ const TopNav = styled.section`
   font-size: 1.2rem;
   background-color:#000;
   width: 100%;
-  height: 5vh;
+  height: 7vh;
   align-items: center;
   padding: 1rem 2rem;
   gap: 2rem;
