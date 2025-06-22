@@ -11,6 +11,10 @@ const Hero = styled.section`
   background-position: center;
   background-size: cover;
   height: 85vh;
+
+  @media (max-width:1100px) {
+  background:#E7F0FB
+  }
 `;
 
 const HeroText = styled.div`
@@ -46,7 +50,7 @@ const FeatureListContainer = styled.div`
   margin-left: 10px;
   margin-bottom: 20px;
 
-  @media (max-width:1000px) {
+  @media (max-width:1100px) {
   margin-bottom:0;
   }
 `;

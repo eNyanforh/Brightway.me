@@ -36,6 +36,10 @@ const TopNav = styled.section`
   a{
   text-decoration:none;
   }
+
+  @media (max-width:1100px){
+  display:none;
+  }
 `;
 
 const Navbar = styled.nav`
