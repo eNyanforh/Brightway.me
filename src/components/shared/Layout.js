@@ -81,7 +81,7 @@ const NavLinks = styled.div`
     gap: 2rem;
   }
 
-  @media (max-width:1100px) {
+  @media (max-width:1000px) {
   display:none;
   }
 `;
@@ -94,12 +94,9 @@ color:#000;
 }
 `
 export const OnboardingLinks = styled.div`
-display:none;
-
-@media (max-width:1100px) {
 display:flex;
-flex-direction:column;
-gap:1rem;
+
+
 }
 `
 

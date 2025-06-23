@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StyledLinkButton, OnboardingLinks } from "./Layout";
-import { Link } from "react-router-dom";
+
 
 const Hero = styled.section`
   display: flex;
@@ -30,17 +30,18 @@ const HeroText = styled.div`
   min-width: 300px;
   padding-right: 2rem;
   font-size: 1.2rem;
-  text-align: center;
+  
 
   @media (max-width: 1100px) {
     margin-top: 2rem;
+    text-align:center;
   }
 `;
 
 const HeroHeading = styled.h1`
   font-size: 3.75rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #111827;
 
   span {
@@ -110,7 +111,7 @@ const HeroImage = styled.div`
   background-repeat: no-repeat;
   background-position: bottom right;
   position: relative;
-  top: 20px;
+  top: 50px;
   left: 100px;
 
   @media (max-width: 1100px) {
