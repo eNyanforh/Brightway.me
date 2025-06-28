@@ -81,18 +81,16 @@ const HeroSubtext = styled.p`
 `;
 
 const FeatureListContainer = styled.div`
-  width: 440px;
-  height: 230px;
+  width: 280px;
+  height: 170px;
   background-color: #000;
   border-radius: 20px;
   margin-left: 10px;
   margin-bottom: 20px;
 
   @media (max-width:1100px) {
-//   display:none;
 text-align:left;
- 
-
+font-size:1rem;
   }
 `;
 
@@ -103,15 +101,15 @@ const FeatureList = styled.div`
   position: relative;
   top: -10px;
   left: -10px;
-  width: 435px;
-  height: 225px;
+  width: 275px;
+  height: 165px;
   padding-left: 1rem;
   background-color: white;
   border-radius: 20px;
   border: 4px solid black;
 
   li {
-    padding: 10px;
+    padding-top: 10px;
     font-weight: bold;
   }
 `;
@@ -162,7 +160,7 @@ export default function Home() {
                 <li>Create your future</li>
                 <li>Build skills</li>
                 <li>Connect & Grow</li>
-                <li>Opportunity at your fingertips</li>
+                <li>Get Opportunities with ease</li>
               </FeatureList>
             </FeatureListContainer>
 
