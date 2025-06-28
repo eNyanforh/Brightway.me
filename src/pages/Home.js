@@ -82,7 +82,7 @@ const HeroSubtext = styled.p`
 
 const FeatureListContainer = styled.div`
   width: 280px;
-  height: 170px;
+  height: 180px;
   background-color: #000;
   border-radius: 20px;
   margin-left: 10px;
@@ -102,7 +102,7 @@ const FeatureList = styled.div`
   top: -10px;
   left: -10px;
   width: 275px;
-  height: 165px;
+  height: 175px;
   padding-left: 1rem;
   background-color: white;
   border-radius: 20px;
