@@ -16,23 +16,8 @@ const Hero = styled.section`
   height:92vh;
   align-items:flex-start;
   justify-content:center;
-  background: url("/brightway2.webp") no-repeat center 200%;
-  background-color:#E7F0FB;
-  background-size:37.5rem 38.5rem;
-   background-position:center 250%;
-  background-repeat:no-repeat;
-
-   @media (max-width: 768px) {
-    background-position: center 220%;
-  }
-
-  @media (max-width: 480px) {
-    background-position: center 250%;
-  }
-
-  @media (max-width: 375px) {
-    background-position: center 280%;
-  }
+  
+  background:#E7F0FB;
   }
 `;
 
@@ -81,15 +66,18 @@ const HeroSubtext = styled.p`
 `;
 
 const FeatureListContainer = styled.div`
-  width: 280px;
-  height: 180px;
+  width: 440px;
+  height: 230px;
   background-color: #000;
   border-radius: 20px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom:20px;
 
   @media (max-width:1100px) {
+margin-top: 10px;
 text-align:left;
+width:17.5rem;
+height:11.25rem;
 font-size:1rem;
   }
 `;
@@ -101,17 +89,27 @@ const FeatureList = styled.div`
   position: relative;
   top: -10px;
   left: -10px;
-  width: 275px;
-  height: 175px;
+  width: 435px;
+  height: 225px;
   padding-left: 1rem;
   background-color: white;
   border-radius: 20px;
   border: 4px solid black;
 
   li {
-    padding-top: 10px;
+    padding: 10px;
     font-weight: bold;
+
+    @media (max-width:1100px) {
+    padding : 5px 0;
+    }
   }
+
+  @media(max-width:1100px) {
+  width:17.1875rem;
+  height:10.9375rem;
+  }
+
 `;
 
 const HeroImage = styled.div`
@@ -142,7 +140,13 @@ display:flex;
 flex-direction:column;
 gap:1rem;
 `
-
+const OurFeautures = styled.div`
+@media (max-width:1100px) {
+display:flex;
+justify-content:center;
+align-items:center;
+}
+`
 
 export default function Home() {
   return (
@@ -155,14 +159,17 @@ export default function Home() {
               Brightway is an AI-driven digital ecosystem built to empower students,
               connect schools, and deliver opportunities through intelligent tools.
             </HeroSubtext>
+            <OurFeautures>
             <FeatureListContainer>
               <FeatureList>
                 <li>Create your future</li>
                 <li>Build skills</li>
                 <li>Connect & Grow</li>
-                <li>Get Opportunities with ease</li>
+                <li>Get Opportunities with</li>
               </FeatureList>
             </FeatureListContainer>
+            </OurFeautures>
+            
 
             <MobileOnboardingLinks>
           <StyledLinkButton to="/login">Login</StyledLinkButton>
