@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 export const Container = styled.div`
   font-family: 'Inter', sans-serif;
@@ -118,8 +120,34 @@ const Icon = styled.div`
   @media (max-width: 1100px) {
     display: flex;
     cursor: pointer;
+    z-index: 1100;
+position: relative;
   }
 `;
+
+// const MobileMenu = styled.div`
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   background: white;
+//   width: 70%;
+//   height: 100vh;
+//   box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+//   display: flex;
+//   flex-direction: column;
+//   padding: 2rem 1rem;
+//   gap: 1rem;
+//   transform: translateX(0);
+//   transition: transform 0.3s ease-in-out;
+//   z-index: 1000;
+
+//   a {
+//     text-decoration: none;
+//     font-size: 1.2rem;
+//     color: #000;
+//     font-weight: 600;
+//   }
+// `;
 
 export function Layout({ children, activeTab = "individuals" }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -154,11 +182,42 @@ export function Layout({ children, activeTab = "individuals" }) {
   {showMenu ? <X size={30} /> : <Menu size={30} />}
 </Icon>
       </Navbar>
-      {/* for small screens show the toggled menu */}
-      <PrimaryNavLinks show={showMenu}>
-        <Link to="/about">About Us</Link>
-        <Link to="/partner">Partner with us</Link>
-      </PrimaryNavLinks>
+      <AnimatePresence>
+  {showMenu && (
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{ type: "tween", duration: 0.3 }}
+      style={{
+        position: "fixed",
+        top: 0,
+        right: 0,
+        background: "white",
+        width: "70%",
+        height: "100vh",
+        boxShadow: "-2px 0 10px rgba(0,0,0,0.1)",
+        display: "flex",
+        flexDirection: "column",
+        padding: "2rem 1rem",
+        gap: "1rem",
+        zIndex: 1000,
+
+//         a {
+// //     text-decoration: none;
+// //     font-size: 1.2rem;
+// //     color: #000;
+// //     font-weight: 600;
+// //   }
+      }}
+    >
+      <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
+      <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
+      <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
+      <StyledLinkButton to="/signup" primary onClick={() => setShowMenu(false)}>Join for free</StyledLinkButton>
+    </motion.div>
+  )}
+</AnimatePresence>
       {children}
     </>
   );
