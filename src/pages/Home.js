@@ -171,7 +171,7 @@ export default function Home() {
       <Layout activeTab="individuals">
       <Hero>
   <MobileBackgroundVideo autoPlay muted loop playsInline>
-    <source src="/bg3.mp4" type="video/mp4" />
+    <source src="/bg4.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </MobileBackgroundVideo>
   <HeroText>
