@@ -142,7 +142,7 @@ const PartnersCta = styled(Link)`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
   @media(max-width:1100px){
-  padding: 0.6rem 5.2rem;
+  padding: 0.6rem 4.5rem;
   }
 `;
 
