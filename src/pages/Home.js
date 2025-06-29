@@ -17,7 +17,9 @@ const Hero = styled.section`
   height:92vh;
   align-items:flex-start;
   justify-content:center;
-  background:rgba(231, 240, 251,0.8)
+
+  
+  background:rgba(231, 240, 251,0.8);
   
   }
 `;
@@ -172,7 +174,7 @@ export default function Home() {
       <Layout activeTab="individuals">
       <Hero>
   <MobileBackgroundVideo autoPlay muted loop playsInline>
-    <source src="/bg4.mp4" type="video/mp4" />
+    <source src="/bg6.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </MobileBackgroundVideo>
   <HeroText>
