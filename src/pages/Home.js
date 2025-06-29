@@ -187,7 +187,7 @@ export default function Home() {
                     <li>Create your future</li>
                     <li>Build skills</li>
                     <li>Connect & Grow</li>
-                    <li>Get Opportunities with</li>
+                    <li>Get Opportunities with ease</li>
                   </FeatureList>
                 </FeatureListContainer>
                 </OurFeautures>

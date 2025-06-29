@@ -201,7 +201,7 @@ export default function ForSchool() {
                 <li>Globalize your school</li>
                 <li>Make online learning easier</li>
                 <li>Digital academic records</li>
-                <li>Talent showcase for students</li>
+                <li>Talent showcase</li>
               </FeatureList>
             </FeatureListContainer>
             </OurFeautures>

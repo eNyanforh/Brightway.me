@@ -185,6 +185,7 @@ margin-top:50px;
 
 export function Layout({ children, activeTab = "individuals" }) {
   const [showMenu, setShowMenu] = useState(false);
+  const [mobileSchoolsClicked, setMobileSchoolsClicked] = useState(false);
 
   return (
     <>
@@ -251,11 +252,16 @@ export function Layout({ children, activeTab = "individuals" }) {
       }}
     >
 
-
-    
-
 <MobileMenu>
-      <Link to="/schools" onClick={() => setShowMenu(false)}>For Schools</Link>
+       <Link
+    to={mobileSchoolsClicked ? "/" : "/schools"}
+    onClick={() => {
+      setMobileSchoolsClicked(true);
+      setShowMenu(false);
+    }}
+  >
+    {mobileSchoolsClicked ? "Home" : "For Schools"}
+  </Link>
       <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
       <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
     </MobileMenu>
