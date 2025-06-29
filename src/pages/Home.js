@@ -19,7 +19,7 @@ const Hero = styled.section`
   justify-content:center;
 
   
-  background:rgba(231, 240, 251,0.9);
+  background:rgba(231, 240, 251,0.8);
   
   }
 `;
