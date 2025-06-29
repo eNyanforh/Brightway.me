@@ -251,6 +251,9 @@ export function Layout({ children, activeTab = "individuals" }) {
       }}
     >
 
+
+    
+
 <MobileMenu>
       <Link to="/schools" onClick={() => setShowMenu(false)}>For Schools</Link>
       <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
@@ -265,7 +268,7 @@ export function Layout({ children, activeTab = "individuals" }) {
       <Link to="/partner" onClick={() => setShowMenu(false)}>EULA</Link>
     </FooterLinks>
     <FooterOnboarding>
- <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
+ <StyledLinkButton to="/login" onClick={() => setShowMenu(false)} style={{color:" #3B82F6", backgroundColor:"transparent"}}>Login</StyledLinkButton>
       <StyledLinkButton to="/signup" primary onClick={() => setShowMenu(false)}>Join for free</StyledLinkButton>
       </FooterOnboarding>
  

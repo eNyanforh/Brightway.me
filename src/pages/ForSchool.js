@@ -129,6 +129,10 @@ const HeroImage = styled.div`
   position: relative;
   top: 20px;
   left: 90px;
+
+  @media (max-width:1100px) {
+  display:none;
+  }
 `;
 
 const PartnersCta = styled(Link)`
@@ -139,7 +143,7 @@ const PartnersCta = styled(Link)`
   color: white;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 
   @media(max-width:1100px){
   padding: 0.6rem 4.5rem;
@@ -163,6 +167,18 @@ const MobileBackgroundVideo = styled.video`
   }
 `;
 
+const OurFeautures = styled.div`
+@media (max-width:1100px) {
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+ @media (orientation: landscape) {
+    display: none;
+  }
+`
+
 
 export default function ForSchool() {
   return (
@@ -179,6 +195,7 @@ export default function ForSchool() {
               Brightway provides digital tools for transformational learning
               advancing education to empower your students globally.
             </HeroSubtext>
+            <OurFeautures>
             <FeatureListContainer>
               <FeatureList>
                 <li>Globalize your school</li>
@@ -187,8 +204,10 @@ export default function ForSchool() {
                 <li>Talent showcase for students</li>
               </FeatureList>
             </FeatureListContainer>
+            </OurFeautures>
             <PartnersCta to="/partner">Partner with us</PartnersCta>
           </HeroText>
+          <HeroImage/>
          
         </Hero>
       </Layout>
