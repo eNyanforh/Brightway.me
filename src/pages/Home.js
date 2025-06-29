@@ -164,8 +164,11 @@ const OurFeautures = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-
 }
+
+ @media (orientation: landscape) {
+    display: none;
+  }
 `
 
 export default function Home() {
