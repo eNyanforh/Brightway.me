@@ -125,6 +125,15 @@ position: relative;
   }
 `;
 
+// const edit = styled.(AnimatePresence)`
+//     a {
+// text-decoration: none;
+// font-size: 1.2rem;
+// olor: #000;
+// font-weight: 600;
+// }
+
+
 // const MobileMenu = styled.div`
 //   position: fixed;
 //   top: 0;
@@ -202,8 +211,13 @@ export function Layout({ children, activeTab = "individuals" }) {
         padding: "2rem 1rem",
         gap: "1rem",
         zIndex: 1000,
+        textDecoration: "none",
+        paddingTop: "100px",
+        paddingLeft: "30px",
+      
+        
 
-//         a {
+//         a {{}
 // //     text-decoration: none;
 // //     font-size: 1.2rem;
 // //     color: #000;
@@ -211,11 +225,15 @@ export function Layout({ children, activeTab = "individuals" }) {
 // //   }
       }}
     >
-      <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
-      <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
+
+
+      <Link to="/about" onClick={() => setShowMenu(false)} style={{textDecoration:"none",color:"#000", fontWeight:"bold"}}>About Us</Link>
+      <Link to="/partner" onClick={() => setShowMenu(false)} style={{textDecoration: "none", color: "#000", fontWeight:"bold"}}>Partner with us</Link>
       <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
       <StyledLinkButton to="/signup" primary onClick={() => setShowMenu(false)}>Join for free</StyledLinkButton>
+    
     </motion.div>
+
   )}
 </AnimatePresence>
       {children}
