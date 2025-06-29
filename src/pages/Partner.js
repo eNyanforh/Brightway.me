@@ -188,6 +188,7 @@ align-items:center;
 
 const Overlay = styled.div`
   position: absolute;
+
   top: 0;
   left: 0;
   height: 100%;
@@ -201,9 +202,11 @@ const Overlay = styled.div`
 `;
 
 const PartnersCta = styled(Link)`
-  padding: 1rem 12.2rem;
+display:flex;
+align-items:center;
+  padding: 0.7rem 5rem;
   background-color:white;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-top: 20px;
   
   color: white;
@@ -213,6 +216,10 @@ const PartnersCta = styled(Link)`
 
   @media(max-width:1100px){
   padding: 0.6rem 4.5rem;
+  }
+
+  p{
+  color:black;
   }
 `;
 
@@ -235,34 +242,38 @@ export default function Home() {
                 <FeatureListContainer>
                   <FeatureList>
                     <p>
-                        <img src="/compass1.png" style={{width:"55px"}}/>
+                        <img src="/globe.png" style={{width:"55px"}}/>
                     </p>
-                    <p>Direct pathways to jobs, 
-internships, scholarships, and 
-global opportunities</p>
+                    <p> Expand your reach and
+ impact globally</p>
                   </FeatureList>
                 </FeatureListContainer>
 
                 <FeatureListContainer>
                   <FeatureList>
                     <p>
-                        <img src="/users1.png" style={{width:"55px"}}/>
+                        <img src="/work.png" style={{width:"55px"}}/>
                     </p>
-                    <p>A growing network of like-minded individuals and partners</p>
+                    <p>Discover future-ready talent
+ for your programs and roles</p>
                   </FeatureList>
                 </FeatureListContainer>
 
                 <FeatureListContainer>
                   <FeatureList>
                     <p>
-                        <img src="/student1.png" style={{width:"55px"}}/>
+                        <img src="/gcap1.png" style={{width:"70px"}}/>
                     </p>
-                    <p>Verified school and academic  
-AI tools to streamline learning</p>
+                    <p>Support digital learning and 
+career development</p>
                   </FeatureList>
                 </FeatureListContainer>
     </OurFeautures>
-    <PartnersCta to="/partner">Partner with us</PartnersCta>
+    <PartnersCta to="/partner">
+    <p>Interested in partnering with us?</p>
+    <StyledLinkButton to="/signup" primary>Get in touch</StyledLinkButton>
+
+    </PartnersCta>
                 <MobileOnboardingLinks>
               <StyledLinkButton to="/login">Login</StyledLinkButton>
               <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
