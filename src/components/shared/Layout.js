@@ -155,7 +155,7 @@ margin-top:50px;
 
   a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000;
     font-weight: 600;
   }
