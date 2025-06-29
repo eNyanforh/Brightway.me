@@ -15,26 +15,42 @@ const Hero = styled.section`
   height: 85vh;
 
   @media (max-width:1100px) {
-  background:#E7F0FB;
+   position: relative;
+  height:92vh;
+  align-items:flex-start;
+  justify-content:center;
+  background:rgba(231, 240, 251,0.8);
+  
   }
 `;
-
 const HeroText = styled.div`
   flex: 1;
   min-width: 300px;
   padding-right: 2rem;
   font-size: 1.2rem;
+
+
+  @media (max-width:1100px) {
+  text-align:center;
+  margin-top:2rem;
+
+  }
+
 `;
 
 const HeroHeading = styled.h1`
   font-size: 3.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  margin-top: -80px;
   color: #111827;
 
   span {
     color: #3B82F6;
+  }
+
+  @media(max-width:1100px) {
+  font-size:1.875rem
+  
   }
 `;
 
@@ -43,6 +59,12 @@ const HeroSubtext = styled.p`
   font-size: 1.25rem;
   color: black;
   font-weight: bold;
+
+   @media (max-width:1100px) {
+  font-size:0.9rem;
+  font-weight:normal;
+  margin-bottom:1rem;
+  }
 `;
 
 const FeatureListContainer = styled.div`
@@ -53,8 +75,13 @@ const FeatureListContainer = styled.div`
   margin-left: 10px;
   margin-bottom: 40px;
 
-  @media(max-width) {
-  display:none;
+  
+  @media (max-width:1100px) {
+margin-top: 10px;
+text-align:left;
+width:17.5rem;
+height:11.25rem;
+font-size:1rem;
   }
 `;
 
@@ -75,6 +102,17 @@ const FeatureList = styled.div`
   li {
     padding: 8px;
     font-weight: bold;
+
+    @media (max-width:1100px) {
+    padding : 5px 0;
+    }
+  }
+
+  @media(max-width:1100px) {
+  width:17.1875rem;
+  height:10.9375rem;
+  }
+
   }
 `;
 
@@ -104,11 +142,33 @@ const PartnersCta = styled(Link)`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 `;
 
+
+const MobileBackgroundVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  display: none;
+  opacity:1;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+
 export default function ForSchool() {
   return (
     <Container>
       <Layout activeTab="schools">
         <Hero>
+           <MobileBackgroundVideo autoPlay muted loop playsInline>
+    <source src="/bg6.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </MobileBackgroundVideo>
           <HeroText>
             <HeroHeading><span>Together, We Brighten Learning.</span></HeroHeading>
             <HeroSubtext>
