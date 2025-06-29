@@ -19,7 +19,7 @@ const Hero = styled.section`
   justify-content:center;
 
   
-  background:rgba(231, 240, 251,0.8);
+  background:rgba(231, 240, 251,0.9);
   
   }
 `;
@@ -164,7 +164,7 @@ const OurFeautures = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-// display:none;
+display:none;
 }
 `
 
