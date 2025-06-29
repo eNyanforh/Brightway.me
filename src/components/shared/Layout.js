@@ -131,7 +131,7 @@ background-color:black;
 display: flex;
 flex-direction: column;
  padding: 2rem 1rem;
-gap: 2.5rem;
+gap: 1.7rem;
 `
 
 const FooterLinks = styled.div`
@@ -145,7 +145,6 @@ display: flex;
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
-    // font-weight: 600;
   }
 `
 
@@ -153,6 +152,7 @@ const FooterOnboarding = styled.div`
 display:flex;
 flex-direction: column;
 gap:1rem;
+margin-top:2rem;
 
 `
 
@@ -260,9 +260,9 @@ export function Layout({ children, activeTab = "individuals" }) {
       <Footer>
         <Logo style={{color:"white"}}>BRIGHTWAY</Logo>
         <FooterLinks>
-      <Link to="/schools" onClick={() => setShowMenu(false)}>For Schools</Link>
-      <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
-      <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
+      <Link to="/schools" onClick={() => setShowMenu(false)}>Terms & Condition</Link>
+      <Link to="/about" onClick={() => setShowMenu(false)}>Cookie Policy</Link>
+      <Link to="/partner" onClick={() => setShowMenu(false)}>EULA</Link>
     </FooterLinks>
     <FooterOnboarding>
  <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
