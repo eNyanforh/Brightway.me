@@ -143,7 +143,7 @@ const PartnersCta = styled(Link)`
   color: white;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 
   @media(max-width:1100px){
   padding: 0.6rem 4.5rem;

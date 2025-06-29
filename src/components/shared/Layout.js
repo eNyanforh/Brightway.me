@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+
 
 
 export const Container = styled.div`
@@ -185,7 +186,7 @@ margin-top:50px;
 
 export function Layout({ children, activeTab = "individuals" }) {
   const [showMenu, setShowMenu] = useState(false);
-  const [mobileSchoolsClicked, setMobileSchoolsClicked] = useState(false);
+ const location = useLocation();
 
   return (
     <>
@@ -253,14 +254,11 @@ export function Layout({ children, activeTab = "individuals" }) {
     >
 
 <MobileMenu>
-       <Link
-    to={mobileSchoolsClicked ? "/" : "/schools"}
-    onClick={() => {
-      setMobileSchoolsClicked(true);
-      setShowMenu(false);
-    }}
+ <Link
+    to={location.pathname === "/schools" ? "/" : "/schools"}
+    onClick={() => setShowMenu(false)}
   >
-    {mobileSchoolsClicked ? "Home" : "For Schools"}
+    {location.pathname === "/schools" ? "Home" : "For Schools"}
   </Link>
       <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
       <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
