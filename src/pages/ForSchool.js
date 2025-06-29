@@ -186,7 +186,7 @@ export default function ForSchool() {
       <Layout activeTab="schools">
         <Hero>
            <MobileBackgroundVideo autoPlay muted loop playsInline>
-    <source src="/bg6.mp4" type="video/mp4" />
+    <source src="/bg5.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </MobileBackgroundVideo>
           <HeroText>
