@@ -125,6 +125,11 @@ position: relative;
   }
 `;
 
+const Footer =styled.div`
+flex-grow:1;
+background-color:black;
+`
+
 // const edit = styled.(AnimatePresence)`
 //     a {
 // text-decoration: none;
@@ -204,16 +209,16 @@ export function Layout({ children, activeTab = "individuals" }) {
         right: 0,
         background: "white",
         width: "70%",
-        height: "100vh",
+        height: "150vh",
         boxShadow: "-2px 0 10px rgba(0,0,0,0.1)",
         display: "flex",
         flexDirection: "column",
-        padding: "2rem 1rem",
+        // padding: "2rem 1rem",
         gap: "1rem",
         zIndex: 1000,
         textDecoration: "none",
-        paddingTop: "100px",
-        paddingLeft: "30px",
+        // paddingTop: "100px",
+        // paddingLeft: "30px",
       
         
 
@@ -227,10 +232,15 @@ export function Layout({ children, activeTab = "individuals" }) {
     >
 
 
+      <Link to="/schools" onClick={() => setShowMenu(false)} style={{textDecoration:"none", color:"#0000", fontWeight:"bold"}}>For Schools</Link>
       <Link to="/about" onClick={() => setShowMenu(false)} style={{textDecoration:"none",color:"#000", fontWeight:"bold"}}>About Us</Link>
       <Link to="/partner" onClick={() => setShowMenu(false)} style={{textDecoration: "none", color: "#000", fontWeight:"bold"}}>Partner with us</Link>
       <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
       <StyledLinkButton to="/signup" primary onClick={() => setShowMenu(false)}>Join for free</StyledLinkButton>
+
+      <Footer>
+
+      </Footer>
     
     </motion.div>
 
