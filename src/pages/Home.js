@@ -13,11 +13,26 @@ const Hero = styled.section`
   height: 85vh;
 
   @media (max-width:1100px) {
+   position: relative;
   height:92vh;
   align-items:flex-start;
   justify-content:center;
-  
-  background:#E7F0FB;
+  background:none;
+  }
+`;
+
+const MobileBackgroundVideo = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
 
@@ -152,33 +167,34 @@ export default function Home() {
   return (
     <Container>
       <Layout activeTab="individuals">
-        <Hero>
-          <HeroText>
-            <HeroHeading>Not Just <span style={{ color: 'gray' }}>Social.</span> <span>Purposeful.</span></HeroHeading>
-            <HeroSubtext>
-              Brightway is an AI-driven digital ecosystem built to empower students,
-              connect schools, and deliver opportunities through intelligent tools.
-            </HeroSubtext>
-            <OurFeautures>
-            <FeatureListContainer>
-              <FeatureList>
-                <li>Create your future</li>
-                <li>Build skills</li>
-                <li>Connect & Grow</li>
-                <li>Get Opportunities with</li>
-              </FeatureList>
-            </FeatureListContainer>
-            </OurFeautures>
-            
+      <Hero>
+  <MobileBackgroundVideo autoPlay muted loop playsInline>
+    <source src="/brightwaybg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </MobileBackgroundVideo>
+  <HeroText>
+    <HeroHeading>Not Just <span style={{ color: 'gray' }}>Social.</span> <span>Purposeful.</span></HeroHeading>
+    <HeroSubtext>Brightway is an AI-driven digital ecosystem built to empower students, connect schools, and deliver opportunities through intelligent tools.</HeroSubtext>
+    <OurFeautures>
+                <FeatureListContainer>
+                  <FeatureList>
+                    <li>Create your future</li>
+                    <li>Build skills</li>
+                    <li>Connect & Grow</li>
+                    <li>Get Opportunities with</li>
+                  </FeatureList>
+                </FeatureListContainer>
+                </OurFeautures>
+                
+    
+                <MobileOnboardingLinks>
+              <StyledLinkButton to="/login">Login</StyledLinkButton>
+              <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
+              </MobileOnboardingLinks>
+  </HeroText>
+  <HeroImage />
+</Hero>
 
-            <MobileOnboardingLinks>
-          <StyledLinkButton to="/login">Login</StyledLinkButton>
-          <StyledLinkButton to="/signup" primary>Join for free</StyledLinkButton>
-          </MobileOnboardingLinks>
-          </HeroText>
-          
-          <HeroImage />
-        </Hero>
       </Layout>
     </Container>
   );
