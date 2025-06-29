@@ -158,6 +158,7 @@ flex-direction:column;
 gap:1rem;
 `
 const OurFeautures = styled.div`
+display:flex;
 @media (max-width:1100px) {
 display:flex;
 justify-content:center;

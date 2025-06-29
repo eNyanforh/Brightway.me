@@ -13,7 +13,7 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-const TopNav = styled.section`
+export const TopNav = styled.section`
   display: flex;
   font-size: 1.2rem;
   background-color: #000;

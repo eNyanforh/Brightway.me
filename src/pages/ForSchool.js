@@ -208,7 +208,6 @@ export default function ForSchool() {
             <PartnersCta to="/partner">Partner with us</PartnersCta>
           </HeroText>
           <HeroImage/>
-         
         </Hero>
       </Layout>
     </Container>
