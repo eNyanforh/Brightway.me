@@ -30,6 +30,7 @@ const MobileBackgroundVideo = styled.video`
   object-fit: cover;
   z-index: -1;
   display: none;
+  opacity:1;
 
   @media (max-width: 768px) {
     display: block;
@@ -160,6 +161,7 @@ const OurFeautures = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
+// display:none;
 }
 `
 
@@ -169,7 +171,7 @@ export default function Home() {
       <Layout activeTab="individuals">
       <Hero>
   <MobileBackgroundVideo autoPlay muted loop playsInline>
-    <source src="/brightwaybg.mp4" type="video/mp4" />
+    <source src="/bg3.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </MobileBackgroundVideo>
   <HeroText>
