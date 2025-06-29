@@ -131,7 +131,29 @@ background-color:black;
 display: flex;
 flex-direction: column;
  padding: 2rem 1rem;
-gap: 1rem;
+gap: 2.5rem;
+`
+
+const FooterLinks = styled.div`
+color:white;
+display: flex;
+  flex-direction: column;
+  
+  gap: 0.8rem;
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    // font-weight: 600;
+  }
+`
+
+const FooterOnboarding = styled.div`
+display:flex;
+flex-direction: column;
+gap:1rem;
+
 `
 
 // const edit = styled.(AnimatePresence)`
@@ -236,10 +258,22 @@ export function Layout({ children, activeTab = "individuals" }) {
     </MobileMenu>
      
       <Footer>
+        <Logo style={{color:"white"}}>BRIGHTWAY</Logo>
+        <FooterLinks>
+      <Link to="/schools" onClick={() => setShowMenu(false)}>For Schools</Link>
+      <Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link>
+      <Link to="/partner" onClick={() => setShowMenu(false)}>Partner with us</Link>
+    </FooterLinks>
+    <FooterOnboarding>
  <StyledLinkButton to="/login" onClick={() => setShowMenu(false)}>Login</StyledLinkButton>
       <StyledLinkButton to="/signup" primary onClick={() => setShowMenu(false)}>Join for free</StyledLinkButton>
+      </FooterOnboarding>
+ 
+
 
       </Footer>
+
+     
     
     </motion.div>
 
