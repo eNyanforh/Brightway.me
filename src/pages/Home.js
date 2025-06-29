@@ -17,7 +17,8 @@ const Hero = styled.section`
   height:92vh;
   align-items:flex-start;
   justify-content:center;
-  background:none;
+  background:rgba(231, 240, 251,0.8)
+  
   }
 `;
 
